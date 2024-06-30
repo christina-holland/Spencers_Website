@@ -41,6 +41,10 @@
         .content-wrapper img {
           opacity: 0.5;
         }
+
+        .form {
+            margin: 20px;
+        }
     </style>    
   </head>
 
@@ -61,7 +65,6 @@
     <!--Setting up the navigation bar-->
     <nav class="navbar navbar-expand-lg bg-warning-subtle">
         <div class="container-fluid">
-          <!--<a class="navbar-brand" href="#">Spencer Paws</a>-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
                   data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
                   aria-label="Toggle navigation">
@@ -91,9 +94,9 @@
         <div class="container">
           <div class="row">
             <div class="col">
-                <img src="spencer.jpg" class="img-fluid" alt="About Us">
+                <img src="aboutus.jpg" class="img-fluid" alt="About Us">
             </div>
-            <div class="col-6">
+            <div class="col-8">
               <h2>About Us</h2>
               <p>
                 Welcome to Spencer Paws, where passion meets paws! Founded by a local youth with a love for dogs, 
@@ -156,7 +159,7 @@
     <!--Setting up the contact section with form components and submit button (not active yet)-->
     <section id="contact" class="py-5">
         <div class="container">
-          <h2 class="text-center mb-4">Contact Us</h2>
+          <h2 class="text-center mb-4">Contact Us For More Info</h2>
           <div class="row">
             
             <div class="col">
@@ -172,9 +175,9 @@
                 </div>
 
                 <div class="form">
-                  <label for="message">Message</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-                </div>
+                    <label for="phone">Your Phone Number</label>
+                    <input type="phone" class="form-control" id="phone" placeholder="Enter your phone number">
+                  </div>
 
                 <button type="submit" class="btn btn-warning btn-block">Submit</button>
 
