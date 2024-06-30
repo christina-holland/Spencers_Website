@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spencer Paws</title>
+    <!--Link to CSS Bootstrap file-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+
+    <!--special CSS styling for the hero section-->
+    <style>
+        .hero {
+          background-image: url('heroimage.jpg');
+          background-size: cover;
+          background-position: center;
+          height: 500px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: white;
+        }
+        .hero h1 {
+          font-size: 3rem;
+        }
+        .hero p {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+        }
+        .hero .btn-primary {
+          font-size: 1.2rem;
+          padding: 10px;
+        }
+
+        .content-wrapper {
+          text-align: center;
+        }
+
+        .content-wrapper img {
+          opacity: 0.5;
+        }
+    </style>    
+  </head>
+
+  <body>
+
+    <!--Setting up the hero banner and order now button (not active yet)-->
+    <section class="hero">
+        <div class="container">
+            <div class="content-wrapper">
+                <img src="logosmall.jpg" alt="Spencer Paws Logo">
+                <h1>Welcome to Spencer Paws</h1>
+                <p class="lead">Enjoy the best dog walking service in town!</p>
+                <a href="#" class="btn btn-warning btn-lg">Make an appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Setting up the navigation bar-->
+    <nav class="navbar navbar-expand-lg bg-warning-subtle">
+        <div class="container-fluid">
+          <!--<a class="navbar-brand" href="#">Spencer Paws</a>-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!--Setting up the about us section with text and images-->
+    <section id="about" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+                <img src="spencer.jpg" class="img-fluid" alt="About Us">
+            </div>
+            <div class="col-6">
+              <h2>About Us</h2>
+              <p>
+                Welcome to Spencer Paws, where passion meets paws! Founded by a local youth with a love for dogs, 
+                we are a dog walking service in Echo Farms committed to providing top-notch care and companionship for your furry 
+                family members.  Our journey began with a simple love for animals and a desire to make a positive impact in our community. 
+                At Spencer Paws, we understand the importance of exercise, socialization, and mental stimulation for dogs 
+                of all breeds and sizes. Whether your pup needs an early morning stroll while you get ready for work or 
+                an afternoon excursion while you're settling in and focusing on dinner, we here to ensure they receive the 
+                attention and exercise they crave.  At Spencer Paws, we treat every dog like family.  Contact us today to schedule a 
+                meet-and-greet or to learn more about how we can help keep your dog happy and healthy! 
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <!--Setting up the features section with cards, three columns, icons, and text-->
+    <section id="features" class="bg-warning-subtle py-5">
+        <div class="container">
+          <h2 class="text-center">Our Features</h2>
+          <div class="row">
+
+            <div class="col">
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="pawprint.jpg" class="img-fluid" alt="Paw Print">
+                  <h5 class="card-title">Quality Service</h5>
+                  <p class="card-text">We tailor our services to meet the individual needs of each dog, 
+                    ensuring they enjoy their time with us to the fullest. </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="pawprint.jpg" class="img-fluid" alt="Paw Print">
+                  <h5 class="card-title">Safety and Reliability</h5>
+                  <p class="card-text">We only walk in safe areas that are part of neighborhood paths and 
+                    away from traffic.  Rest assured that your dog is in capable hands.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="pawprint.jpg" class="img-fluid" alt="Paw Print">
+                  <h5 class="card-title">Convenient Hours</h5>
+                  <p class="card-text">We are available early mornings between 6 AM and 8 AM and afternoons/evenings between 4 PM and 9 PM
+                    for your convenience.</p>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+    </section>
+
+    <!--Setting up the contact section with form components and submit button (not active yet)-->
+    <section id="contact" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Contact Us</h2>
+          <div class="row">
+            
+            <div class="col">
+              <form>
+                <div class="form">
+                  <label for="name">Your Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+
+                <div class="form">
+                  <label for="email">Your Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-warning btn-block">Submit</button>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <!--Setting up the footer-->
+    <footer class="bg-warning-subtle text-center py-3">
+        <p>&copy; 2024 Spencer Paws. All rights reserved.</p>
+        <p>837 Coosaw Place <br> Wilmington, NC 28412 <br> (910) 352-7259
+        <br> spencerandcaramia@gmail.com</p>
+    </footer>
+
+    <!--Link to JavaScript Bootstrap file-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+      crossorigin="anonymous"></script>
+    
+  </body>
+</html>
